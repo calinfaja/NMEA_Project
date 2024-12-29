@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/calin/OneDrive - Technical University of Cluj-Napoca/Desktop/NMEA_Project/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -I\"C:/Users/calin/OneDrive - Technical University of Cluj-Napoca/Desktop/NMEA_Project/gpsd_reader/include\" -I\"C:/Users/calin/OneDrive - Technical University of Cluj-Napoca/Desktop/NMEA_Project/gpsd_reader/src\" -g -std=gnu++17 -o CMakeFiles\\gpsd_reader.dir\\src\\main.cpp.obj -c \"C:\\Users\\calin\\OneDrive - Technical University of Cluj-Napoca\\Desktop\\NMEA_Project\\gpsd_reader\\src\\main.cpp\"",
+  "file": "C:\\Users\\calin\\OneDrive - Technical University of Cluj-Napoca\\Desktop\\NMEA_Project\\gpsd_reader\\src\\main.cpp",
+  "output": "CMakeFiles\\gpsd_reader.dir\\src\\main.cpp.obj"
+}
+]
