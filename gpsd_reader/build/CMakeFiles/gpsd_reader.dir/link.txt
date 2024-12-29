@@ -1,0 +1,1 @@
+/usr/bin/g++ -Wall -Wextra -Wpedantic -fdiagnostics-color=always -Wall -Wextra -Wpedantic -g -g CMakeFiles/gpsd_reader.dir/src/main.cpp.o CMakeFiles/gpsd_reader.dir/src/nmea_parser.cpp.o -o gpsd_reader 

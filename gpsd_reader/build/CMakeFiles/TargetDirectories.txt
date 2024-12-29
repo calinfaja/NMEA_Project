@@ -1,0 +1,7 @@
+/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/build/CMakeFiles/gpsd_reader.dir
+/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/build/CMakeFiles/list_install_components.dir
+/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/build/CMakeFiles/install.dir
+/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/build/CMakeFiles/install/local.dir
+/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/build/CMakeFiles/install/strip.dir

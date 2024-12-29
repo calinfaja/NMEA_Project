@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/include -Wall -Wextra -Wpedantic -fdiagnostics-color=always -Wall -Wextra -Wpedantic -g -g -std=gnu++17 -o CMakeFiles/gpsd_reader.dir/src/main.cpp.o -c /mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/src/main.cpp",
+  "file": "/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/src/main.cpp",
+  "output": "CMakeFiles/gpsd_reader.dir/src/main.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/include -Wall -Wextra -Wpedantic -fdiagnostics-color=always -Wall -Wextra -Wpedantic -g -g -std=gnu++17 -o CMakeFiles/gpsd_reader.dir/src/nmea_parser.cpp.o -c /mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/src/nmea_parser.cpp",
+  "file": "/mnt/c/Users/calin/projet/NMEA_Project/gpsd_reader/src/nmea_parser.cpp",
+  "output": "CMakeFiles/gpsd_reader.dir/src/nmea_parser.cpp.o"
+}
+]

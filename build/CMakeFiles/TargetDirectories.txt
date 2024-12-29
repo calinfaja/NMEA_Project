@@ -1,3 +1,0 @@
-C:/Users/calin/OneDrive - Technical University of Cluj-Napoca/Desktop/NMEA_Project/build/CMakeFiles/gpsd_reader.dir
-C:/Users/calin/OneDrive - Technical University of Cluj-Napoca/Desktop/NMEA_Project/build/CMakeFiles/edit_cache.dir
-C:/Users/calin/OneDrive - Technical University of Cluj-Napoca/Desktop/NMEA_Project/build/CMakeFiles/rebuild_cache.dir
