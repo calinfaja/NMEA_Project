@@ -1,6 +1,4 @@
 # ninja log v6
-24	1553	7572024845209439	CMakeFiles/gpsd_reader.dir/src/main.cpp.obj	e5ef42b65f44e043
-39	2271	7572024845397491	CMakeFiles/gpsd_reader.dir/src/nmea_parser.cpp.obj	4313ab9b71921bfc
-2272	2520	7572024867755173	gpsd_reader.exe	a7dce7dd6caccf31
-21	1682	7572054660596252	CMakeFiles/gpsd_reader.dir/src/nmea_parser.cpp.obj	4313ab9b71921bfc
-1683	1934	7572054677166318	gpsd_reader.exe	a7dce7dd6caccf31
+9	1737	7572084177783856	CMakeFiles/gpsd_reader.dir/src/main.cpp.obj	e5ef42b65f44e043
+16	3121	7572084177783856	CMakeFiles/gpsd_reader.dir/src/nmea_parser.cpp.obj	4313ab9b71921bfc
+3122	3397	7572084208931142	gpsd_reader.exe	a7dce7dd6caccf31
