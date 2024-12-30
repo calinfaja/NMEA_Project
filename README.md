@@ -140,8 +140,12 @@ NMEA File:
 - Handle UTF-8 and special characters
 - Handle latitude values exceeding ±90° or longitude exceeding ±180°.
 - Deal with missing fields or nonsensical data (`12345.678,N`).
+  
 3.  ***Time and Date Validation*:**
-- Recognize and gracefully skip unsupported sentences like `$GPXXX`.
+- UTC time format validation (HHMMSS.sss)
+- Date format validation (DDMMYY)
+- Leap year handling
+- Time zone considerations
 4.  **Signal Quality**:
     
    -  Test sentences near extreme geographic coordinates, e.g., North/South Pole, International Date Line.
