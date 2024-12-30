@@ -71,3 +71,99 @@ NMEA File:
 >     Google Maps Route URL:
 >     https://www.google.com/maps/dir/52.510483,13.389850/52.510583,13.416283/52.520133,13.388550/52.522533,13.409750
 
+
+
+
+## Future Improvements
+
+**If the NMEA text is not correct, for example:**
+
+    $GPGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47
+    $GPGGA,123520,9100.000,S,01131.000,W,1,08,0.9,545.4,M,46.9,M,,*55  # Invalid latitude > 90°
+    $GPRMC,invalid,4807.038,N,01131.000,E,022.4,084.4,230394,003.1,W*6A  # Invalid time field
+    $GPGLL,4916.45,N,12311.12,W,225444,A*1D
+    $GPXXX,4916.45,N,12311.12,W,225444,A*7E  # Unsupported sentence type
+    $GPRMC,225446,A,4916.45,N,12311.12,W,0.0,054.7,191194,020.3,E*6D
+    $GPGGA,091213,,,,,0,00,,,M,,M,,*7A  # Missing critical fields
+    $GPRMC,130000,A,0,N,0,E,0.0,0.0,290220,0.0,E*5C  # Equator and Prime Meridian
+    $GPGGA,135748,4723.845,N,00527.850,E,1,12,1.0,-10.2,M,48.0,M,,*76  # Negative altitude
+    $GPGSV,2,1,08,01,40,083,41,02,17,308,43,03,25,150,37,04,27,312,39*75  # Satellite info
+    $GPGSV,2,2,08,05,12,058,42,06,23,220,38,07,32,180,36,08,50,320,40*71
+    $GPGGA,235959,8900.000,N,18000.000,E,1,08,0.9,0.0,M,0.0,M,,*59  # Boundary values for lat/lon
+    $GPGGA,235959,12345.678,N,54321.987,E,1,08,0.9,0.0,M,0.0,M,,*73  # Invalid lat/lon formatting
+ **The result is:**
+
+> Found 8 GPS data points:
+> 
+> Latitude: -91.000000° Longitude: -11.516667° Satellites: 8 Speed:
+> 99.990000 km/h
+> 
+> Latitude: 0.000000° Longitude: 0.000000° Satellites: 99 Speed:
+> 0.000000 km/h
+> 
+> Latitude: 47.397417° Longitude: 5.464167° Satellites: 12 Speed:
+> 99.990000 km/h
+> 
+> Latitude: 48.117300° Longitude: 11.516667° Satellites: 8 Speed:
+> 99.990000 km/h
+> 
+> Latitude: 49.274167° Longitude: -123.185333° Satellites: 99 Speed:
+> 0.000000 km/h
+> 
+> Latitude: 89.000000° Longitude: 180.000000° Satellites: 8 Speed:
+> 99.990000 km/h
+> 
+> Latitude: 99.990000° Longitude: 99.990000° Satellites: 0 Speed:
+> 99.990000 km/h
+> 
+> Latitude: 123.761300° Longitude: 543.366450° Satellites: 8 Speed:
+> 99.990000 km/h
+> 
+> Google Maps Route URL:
+> https://www.google.com/maps/dir/-91.000000,-11.516667/0.000000,0.000000/47.397417,5.464167/48.117300,11.516667/49.274167,-123.185333/89.000000,180.000000/99.990000,99.990000/123.761300,543.366450
+
+## Improvements to be done:
+
+
+1.  **Checksum Verification**:
+    
+- Checksum Verification  (malformed $GPXXX)  
+- Latitude validation  (±90°) 
+-   Longitude validation  (±180°)  -
+-  Handle unsupported sentences 
+-  Test boundary coordinates
+2.  **Data Validation**:
+- Check talker ID validity  (GP, GL, GA, GN)  
+- Validate message types  (RMC, GGA, GSV, etc.)   
+- Verify field count per message type 
+- Check field data type correctness 
+- Handle UTF-8 and special characters
+- Handle latitude values exceeding ±90° or longitude exceeding ±180°.
+- Deal with missing fields or nonsensical data (`12345.678,N`).
+3.  ***Time and Date Validation*:**
+- Recognize and gracefully skip unsupported sentences like `$GPXXX`.
+4.  **Signal Quality**:
+    
+   -  Test sentences near extreme geographic coordinates, e.g., North/South Pole, International Date Line.
+    - HDOP/PDOP/VDOP range checks - 
+    - Signal-to-Noise ratio validation 
+    - Satellite count validation  (max 32 per constellation)  
+    - Fix quality validation  (0-5)  - Age of differential data
+
+5.  **Signal Quality**:
+- Speed sanity checks  (max realistic speed)  
+- Position jump detection - 
+- Course/bearing validation  (0-359.99)  
+- Magnetic variation checks 
+- Altitude reasonable limits
+
+
+6.  **Memory Safety**:
+- Maximum sentence length  (82 chars per standard)  
+- Field buffer overflow protection 
+- String termination verification 
+
+7.  **Logging and Debugging**:
+- Detailed error logging - 
+- Performance metrics 
+- Debug mode capabilities
