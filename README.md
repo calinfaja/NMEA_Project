@@ -22,7 +22,7 @@ A lightweight C++ application that parses NMEA GPS data and generates Google Map
 - Git (optional, for version control)
 
 ## 🔧 How to run it?
-
+Build the program via: setup_build.sh
 After build, in build folder there will be the gpsd_reader.exe
 To run the program:
 ./gpsd_reader <file>.nmea
@@ -46,29 +46,28 @@ NMEA File:
 
 
 **Output:**
->  Found 4 GPS data points:
->     ========================
->     Latitude: 52.510483°
->     Longitude: 13.389850°
->     Satellites: 12
->     Speed: 6440.700400 km/h
->     ------------------------
->     Latitude: 52.510583°
->     Longitude: 13.416283°
->     Satellites: 12
->     Speed: 6440.700400 km/h
->     ------------------------
->     Latitude: 52.520133°
->     Longitude: 13.388550°
->     Satellites: 12
->     Speed: 5252.457200 km/h
->     ------------------------
->     Latitude: 52.522533°
->     Longitude: 13.409750°
->     Satellites: 12
->     Speed: 5044.662800 km/h
->     ------------------------
->     
+    Found 4 GPS data points:
+    
+    Latitude: 52.510483°
+    Longitude: 13.389850°
+    Satellites: 12
+    Speed: 6440.700400 km/h
+    
+    Latitude: 52.510583°
+    Longitude: 13.416283°
+    Satellites: 12
+    Speed: 6440.700400 km/h
+    
+    Latitude: 52.520133°
+    Longitude: 13.388550°
+    Satellites: 12
+    Speed: 5252.457200 km/h
+    
+    Latitude: 52.522533°
+    Longitude: 13.409750°
+    Satellites: 12
+    Speed: 5044.662800 km/h
+
 >     Google Maps Route URL:
 >     https://www.google.com/maps/dir/52.510483,13.389850/52.510583,13.416283/52.520133,13.388550/52.522533,13.409750
 
