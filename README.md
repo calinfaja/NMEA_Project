@@ -1,7 +1,7 @@
 # GPS NMEA Parser
 
 [![Windows Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/gps-parser)
-[![C++](https://img.shields.io/badge/C%2B%2B-14-blue.svg)](https://github.com/yourusername/gps-parser)
+[![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg?style=flat&logo=c%2B%2B)](https://github.com/yourusername/gps-parser)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yourusername/gps-parser)
 
 A lightweight C++ application that parses NMEA GPS data and generates Google Maps routes from GPS coordinates. This version is specifically configured for Windows environments.
