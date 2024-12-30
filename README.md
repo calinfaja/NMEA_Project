@@ -148,19 +148,12 @@ NMEA File:
 - Time zone considerations
 4.  **Signal Quality**:
     
-   -  Test sentences near extreme geographic coordinates, e.g., North/South Pole, International Date Line.
-    - HDOP/PDOP/VDOP range checks - 
-    - Signal-to-Noise ratio validation 
-    - Satellite count validation  (max 32 per constellation)  
-    - Fix quality validation  (0-5)  - Age of differential data
-
-5.  **Signal Quality**:
+-  Test sentences near extreme geographic coordinates, e.g., North/South Pole, International Date Line.
 - Speed sanity checks  (max realistic speed)  
 - Position jump detection - 
 - Course/bearing validation  (0-359.99)  
 - Magnetic variation checks 
 - Altitude reasonable limits
-
 
 6.  **Memory Safety**:
 - Maximum sentence length  (82 chars per standard)  
