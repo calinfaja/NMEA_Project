@@ -1,3 +1,7 @@
+# This script sets up the project configuration for a CMake build system.
+# It defines the project name, version, and required CMake version.
+# It also includes the necessary directories and dependencies for the project.
+# Additionally, it configures the build options and compiler settings.
 cmake_minimum_required(VERSION 3.10)
 project(gpsd_reader)
 
