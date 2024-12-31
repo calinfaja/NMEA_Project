@@ -12,7 +12,6 @@ A lightweight C++ application that parses NMEA GPS data and generates Google Map
 - Extract coordinates, speed, and satellite information
 - Combine matching GPS points from different NMEA sentences
 - Generate Google Maps URLs for visualization
-- Windows-optimized build system
 
 ## 📋 Prerequisites
 
