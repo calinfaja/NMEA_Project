@@ -1,3 +1,31 @@
+/**
+ * @file nmea_parser.cpp
+ * @brief Implementation of the NMEAParser class for parsing NMEA sentences from a file.
+ * 
+ * This file contains the implementation of the NMEAParser class, which is responsible for
+ * reading NMEA sentences from a file, parsing them, and extracting GPS data. The extracted
+ * data includes latitude, longitude, satellite count, and speed, which are stored in a 
+ * gps_data_t structure. The class also provides functionality to generate a Google Maps URL
+ * from the parsed GPS points.
+ * 
+ * The main functionalities provided by this class include:
+ * - Splitting a string by a delimiter.
+ * - Converting NMEA coordinate format to decimal degrees.
+ * - Processing NMEA sentences and extracting relevant GPS data.
+ * - Generating a Google Maps URL from the parsed GPS points.
+ * - Parsing an entire file containing NMEA sentences.
+ * 
+ * The class uses a map to store GPS points, with the coordinates as the key and the gps_data_t
+ * structure as the value. This allows for efficient updating and retrieval of GPS data.
+ * 
+ * The following NMEA sentence types are supported:
+ * - $GPGGA: Provides latitude, longitude, and satellite count.
+ * - $GPRMC: Provides latitude, longitude, and speed.
+ * 
+ * @note The conversion from knots to km/h is performed for speed values extracted from $GPRMC sentences.
+ * 
+ * @see nmea_parser.h
+ */
 #include "nmea_parser.h"
 #include <fstream>
 #include <sstream>
