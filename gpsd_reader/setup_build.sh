@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Create and enter build directory
+rm -rf build
 mkdir -p build
 cd build
 
