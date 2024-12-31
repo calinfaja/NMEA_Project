@@ -25,7 +25,9 @@ A lightweight C++ application that parses NMEA GPS data and generates Google Map
 Build the program via: setup_build.sh
 After build, in build folder there will be the gpsd_reader.exe
 To run the program:
-./gpsd_reader <file>.nmea
+
+    ./gpsd_reader file.nmea
+![image](https://github.com/user-attachments/assets/d972bff4-3250-497b-8139-46348037205f)
 
 **Example:**
 NMEA File:
