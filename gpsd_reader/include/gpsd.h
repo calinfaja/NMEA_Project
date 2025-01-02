@@ -34,10 +34,10 @@
 #define GPSD_H
 
 struct gps_data_t {
-    double latitude = 99.99;      // Initialize with defaults
-    double longitude = 99.99;
-    int satellite_count = 99;    // Number of satellites in view
-    double speed = 99.99;         // Speed in km/h
+    double latitude = 0;      // Initialize with defaults
+    double longitude = 0;
+    int satellite_count = 0;    // Number of satellites in view
+    double speed = 0;         // Speed in km/h
 };
 
 #endif // GPSD_H
